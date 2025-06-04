@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+<section id="FAQ" class="py-16 px-6 mt-10">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Search bar -->
+    <div class="mb-6 flex gap-2">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari judul..."
+        class="flex-1 p-3 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
+      />
+      <button
+        id="searchBtn"
+        class="px-4 py-3 bg-gray-700 hover:bg-gray-600 rounded-md text-white font-semibold transition"
+      >
+        Cari
+      </button>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="mb-8 flex items-center gap-3">
+      <label for="sectionSelect" class="text-gray-300 font-medium">Pilih Menu:</label>
+      <select
+        id="sectionSelect"
+        class="bg-gray-800 text-white p-2 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
+      >
+        <option value="all">Allmenu</option>
+        <option value="group">Group</option>
+        <option value="Game">Game</option>
+        <option value="Ai">Ai</option>
+        <option value="Voicejapan">Voice japan</option>
+        <option value="Voicechanger">Voice changer</option>
+        <option value="Owner">Owner</option>
+        <option value="Random">Random</option>
+        <option value="Anonymous">Anonymous</option>
+        <option value="Search">Search</option>
+        <option value="Sticker">Sticker</option>
+        <option value="Tools">Tools</option>
+        <option value="Informasi">Informasi</option>
+        <option value="Download">Download</option>
+        <option value="General">General</option>
+        <option value="Textmaker">Text maker</option>
+      </select>
+    </div>
+
+    <script>
+      const sectionNames = [
+        "Group", "Game", "Ai", "Voicejapan", "Voicechanger", "Owner",
+        "Random", "Anonymous", "Search", "Sticker", "Tools",
+        "Informasi", "Download", "General", "Textmaker"
+      ];
+    </script>
+
+    <div id="allSections">
+      <section id="Group">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Group</h2>
+        <div id="faqListGroup" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Group 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Group 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Group 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Group 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Group 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Group 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Group 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Group 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Group 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Group 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Game">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Game</h2>
+        <div id="faqListGame" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Game 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Game 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Game 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Game 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Game 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Game 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Game 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Game 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Game 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Game 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Ai">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Ai</h2>
+        <div id="faqListAi" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Ai 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Ai 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Ai 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Ai 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Ai 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Ai 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Ai 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Ai 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Ai 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Ai 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Voicejapan">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Voice japan</h2>
+        <div id="faqListVoicejapan" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice japan 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice japan 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice japan 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice japan 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice japan 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice japan 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice japan 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice japan 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice japan 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice japan 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Voicechanger">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Voice changer</h2>
+        <div id="faqListVoicechanger" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice changer 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice changer 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice changer 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice changer 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice changer 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice changer 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice changer 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice changer 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Voice changer 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Voice changer 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Owner">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Owner</h2>
+        <div id="faqListOwner" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Random">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Random</h2>
+        <div id="faqListRandom" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Random 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Random 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Random 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Random 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Random 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Random 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Random 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Random 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Random 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Random 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Anonymous">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Anonymous</h2>
+        <div id="faqListAnonymous" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Anonymous 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Anonymous 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Anonymous 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Anonymous 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Anonymous 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Anonymous 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Anonymous 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Anonymous 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Anonymous 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Anonymous 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Search">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Search</h2>
+        <div id="faqListSearch" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Search 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Search 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Search 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Search 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Search 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Search 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Search 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Search 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Search 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Search 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Sticker">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Sticker</h2>
+        <div id="faqListSticker" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Sticker 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Sticker 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Sticker 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Sticker 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Sticker 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Sticker 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Sticker 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Sticker 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Sticker 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Sticker 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Tools">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Tools</h2>
+        <div id="faqListTools" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Owner 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Owner 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Informasi">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Informasi</h2>
+        <div id="faqListInformasi" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Informasi 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Informasi 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Informasi 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Informasi 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Informasi 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Informasi 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Informasi 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Informasi 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Informasi 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Informasi 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Download">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Download</h2>
+        <div id="faqListDownload" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Download 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Download 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Download 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Download 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Download 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Download 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Download 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Download 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Download 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Download 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="General">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">General</h2>
+        <div id="faqListGeneral" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur General 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi General 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur General 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi General 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur General 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi General 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur General 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi General 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur General 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi General 5</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="Textmaker">
+        <h2 class="text-4xl font-bold text-center mb-10 mt-10">Text maker</h2>
+        <div id="faqListTextmaker" class="space-y-4">
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Text maker 1</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Text maker 1</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Text maker 2</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Text maker 2</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Text maker 3</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Text maker 3</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Text maker 4</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Text maker 4</p>
+          </details>
+          <details class="bg-gray-900 shadow-md rounded-lg p-4">
+            <summary class="font-semibold cursor-pointer">Fitur Text maker 5</summary>
+            <p class="mt-2 text-gray-300">Deskripsi Text maker 5</p>
+          </details>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Tombol Ke Atas -->
+<button id="backToTop"
+  class="fixed bottom-20 right-6 z-50 p-3 rounded-full bg-gray-700 bg-opacity-50 text-white hover:bg-opacity-80 transition hidden"
+  title="Kembali ke atas">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<script>
+  function filterFAQ() {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const allFaqs = document.querySelectorAll('section div[id^="faqList"] details');
+
+    allFaqs.forEach(detail => {
+      const title = detail.querySelector('summary').textContent.toLowerCase();
+      detail.style.display = title.includes(search) ? 'block' : 'none';
+    });
+  }
+
+  document.getElementById('searchBtn').addEventListener('click', filterFAQ);
+  document.getElementById('searchInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') filterFAQ();
+  });
+
+  document.getElementById('sectionSelect').addEventListener('change', function () {
+    const value = this.value;
+    if (value === 'all') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const section = document.getElementById(value);
+      if (section) {
+        const offset = 100;
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+      }
+    }
+  });
+
+
+  const backToTopBtn = document.getElementById('backToTop');
+// Tampilkan tombol ketika scroll ke bawah
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.remove('hidden');
+  } else {
+    backToTopBtn.classList.add('hidden');
+  }
+});
+
+// Fungsi scroll ke atas saat tombol diklik
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+</script>
+</body>
+</html>
